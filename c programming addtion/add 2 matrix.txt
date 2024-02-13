@@ -1,0 +1,75 @@
+#include<stdio.h>
+void main()
+{
+    int a[3][3],b[3][3],i,j,sum[3][3];
+    printf("enter first nine value");
+    for(i=0;i<3;i++)
+    {
+    for(j=0;j<3;j++)
+    scanf("%d",&a[i][j]);
+    }
+    printf("enter second nine value");
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        scanf("%d",&b[i][j]);
+    }
+    printf("entered first matrix value");
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        printf("%d\t",a[i][j]);
+        printf("\n");
+        }
+    printf("given second matrix");
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        printf("%d\t",b[i][j]);
+        printf("\n");
+    }
+    printf("\n given addition matrix is \n");
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            sum[i][j]=a[i][j]+b[i][j];
+            printf("%d\t",sum[i][j]);
+        }
+        printf("\n");
+    }
+    
+}
+
+output
+/tmp/uzRWy6oiNH.o
+enter first nine value1
+2
+3
+4
+5
+6
+7
+8
+9
+enter second nine value9
+8
+7
+6
+5
+4
+3
+2
+1
+entered first matrix value1	2	3	
+4	5	6	
+7	8	9	
+given second matrix9	8	7	
+6	5	4	
+3	2	1	
+
+ given addition matrix is 
+10	10	10	
+10	10	10	
+10	10	10	
+
