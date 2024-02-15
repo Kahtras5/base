@@ -1,0 +1,31 @@
+#include<stdio.h>
+int swap(int*n1,int *n2);
+void main()
+{
+    int num1,num2;
+    printf("enter 2 integer no");
+    scanf("%d %d",&num1,&num2);
+    printf("\n before swaping ");
+    printf("num1=%d,num2=%d",num1,num2);
+    swap(&num1,&num2);
+    printf("\nafter swaping \n");
+    printf("\n num1=%d num2=%d",num1,num2);
+}
+int swap(int*n1,int*n2)
+{
+    int temp;
+    temp=*n1;
+    *n1=*n2;
+    *n2=temp;
+}
+
+
+output
+
+/tmp/uzRWy6oiNH.o
+enter 2 integer no10
+20
+before swaping num1=10,num2=20
+after swaping 
+
+ num1=20 num2=10
